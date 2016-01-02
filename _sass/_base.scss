@@ -328,7 +328,17 @@ header {
 #contact .fa {
     color: $theme-dark;
     font-size: 4em;
+    
 }
+
+#contact {
+  @media (min-width: 992px) {
+      .col-md-6 {
+          width: 25%;
+      }
+  }
+}
+
 
 // Extras
 // -- Highlight Color Customization
