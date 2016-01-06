@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="row no-gutter">
       <div class="col-lg-4 col-sm-6">
-        <a href="#" class="portfolio-box">
+        <a href="#" data-toggle="modal" data-target="#DevignHunt" class="portfolio-box">
           <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
           <div class="portfolio-box-caption">
             <div class="portfolio-box-caption-content">
@@ -15,6 +15,22 @@
             </div>
           </div>
         </a>
+        <div id="DevignHunt" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="projectTitle modal-title">Devign Hunt</h4>
+              </div>
+              <div class="modal-body">
+                <p>As my very first web development project, I built a vintage-style TicTacToe game using JavaScript. I am still very proud of what I managed to achieve after just a week of coding experience. I definitely recommend listening to synthwave music while playing the game!</p>
+                <p class="text-muted">Node.js, Express, Passport, AngularJS, HTML5, CSS3.</p>
+                <p><a href="https://retro-tictactoe.herokuapp.com/" class="btn btn-default" role="button" target="_blank">Visit Website</a> <a href="https://github.com/jacprada/TicTacToe" class="btn btn-default" role="button" target="_blank">View Front-end Code</a><a href="https://github.com/jacprada/TicTacToe" class="btn btn-default" role="button" target="_blank">View Back-end Code</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="col-lg-4 col-sm-6">
         <a href="#" class="portfolio-box">
@@ -92,23 +108,23 @@
         </a>
       </div>
       <!-- portfolio grid to go here -->
-      {% for post in site.posts %}
-        <div class="col-lg-4 col-sm-6">
-          <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-box">
-            <img src="img/portfolio/garethg_website.png" class="img-responsive" alt="">
+      <!-- {% for post in site.posts %} -->
+        <!-- <div class="col-lg-4 col-sm-6">
+          <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-box portfolio-link" data-toggle="modal">
+            <img src="img/portfolio/{{ post.thumbnail }}" class="img-responsive" alt="">
             <div class="portfolio-box-caption">
               <div class="portfolio-box-caption-content">
                 <div class="project-category text-faded">
-                  My Personal Site
+                  {{ post.title }}
                 </div>
                 <div class="project-name">
-                  garethg.com
+                  {{ post.subtitle }}
                 </div>
               </div>
             </div>
           </a>
-        </div>
-      {% endfor %}
+        </div> -->
+      <!-- {% endfor %} -->
     </div>
   </div>
 </section>

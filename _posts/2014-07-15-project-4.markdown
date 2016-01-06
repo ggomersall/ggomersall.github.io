@@ -1,0 +1,15 @@
+---
+title: Devign Hunt
+subtitle: MEAN Stack Website
+layout: front
+modal-id: 1
+date: 2015-12-12
+img: 1.jpg
+thumbnail: 1.jpg
+alt: image-alt
+project-date: December 2015
+app: http://garethg.com/devign-frontend/
+github: https://github.com/ggomersall/devign-frontend | https://github.com/ggomersall/devign-api
+description: For my final project I built a story making app using a MEAN Stack. With additional styling using SASS, CSS and JavaScript. A user can log in to the site, locally or using Facebook and fill in a form to create a new story. The user can paste the story and link images and the story will be created using a parallax affect for users to scroll through and enjoy.
+
+---
